@@ -30,7 +30,7 @@ struct TGAColor{
 	int bytespp;
 
 	TGAColor():val(0), bytespp(1){}
-	TGAColor(unsigned char _b, unsigned char _g, unsigned char _r, unsigned char _a):b(_b), g(_g), r(_r), a(_a), bytespp(4){}
+	TGAColor(unsigned char _r, unsigned char _g, unsigned char _b, unsigned char _a):b(_b), g(_g), r(_r), a(_a), bytespp(4){}
 	TGAColor(int v, int bpp): val(v), bytespp(bpp){}
 	TGAColor(unsigned char *b, int bpp):val(0), bytespp(bpp){
 		for (int i = 0;i<bpp; ++i){
