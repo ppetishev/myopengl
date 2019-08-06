@@ -40,7 +40,7 @@ void line(int x0, int y0, int x1, int y1, TGAImage &img, const TGAColor &c){
         }
         error2 += derror2;
         if(error2 > dx){
-            y += (y0 == y1 ? 0 : (y0 > y1?-1:1));
+            y += (y0 > y1?-1:1);
             error2 -= dx * 2;
         }
     }
