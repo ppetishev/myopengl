@@ -27,7 +27,7 @@ TGAImage::TGAImage(int w, int h, int bpp, unsigned int c):width(w), height(h),
 	}
 }
 
-TGAImage::TGAImage(int w, int h, TGAColor &c):width(w), height(h), 
+TGAImage::TGAImage(int w, int h, const TGAColor &c):width(w), height(h), 
 		bytespp(c.bytespp), data(NULL){
 	unsigned long nbytes = w * h * c.bytespp;
 	data = new unsigned char[nbytes];
