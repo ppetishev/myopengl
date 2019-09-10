@@ -2,6 +2,7 @@
 #define __GEOMETRY_H__
 
 #include <cmath>
+#include <iostream>
 
 template <class T> struct Vec2{
     union{
@@ -15,8 +16,8 @@ template <class T> struct Vec2{
     inline Vec2<T> operator+(const Vec2<T> &V){return Vec2<T>(u+V.u, v+V.v);}
     inline Vec2<T> operator-(const Vec2<T> &V){return Vec2<T>(u-V.u, v-V.v);}
     inline Vec2<T> operator*(float f){return Vec2<T>(u*f, v*f);}
-	template <class > friend Vec2<T> operator*(float f, const Vec2<T> &v);
-    template <class > friend std::ostream& operator << (std::ostream& s, Vec2<T> &v);
+	template <class > friend Vec2<T> operator*(float f, const Vec2<T>& v);
+    template <class > friend std::ostream& operator<<(std::ostream& s, Vec2<T>& v);
     inline const float vec_len(){return std::sqrt(v*v + u*u);}
     Vec2<T> normalize(float l=1){
         return (*this) * (l/vec_len());
@@ -50,7 +51,7 @@ typedef Vec2<float> Vec2f;
 typedef Vec3<int> Vec3i;
 typedef Vec3<float> Vec3f;
 
-template <class T> std::ostream& operator << (std::ostream& s, Vec2<T> &v){
+template <class x> std::ostream& operator << (std::ostream& s, Vec2<x>& v){
     s << "(" << v.x << ", " << v.y << ")\n";
     return s;
 }
