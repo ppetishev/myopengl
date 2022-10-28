@@ -117,9 +117,7 @@ void triangle(int x0, int y0, int x1, int y1, int x2, int y2, TGAImage &img, con
         ldir = 1;
     else ldir = -1;
     if (lx0 == lx1)
-        ldir = 0;
-
-  
+        ldir = 0;  
     
     if (std::abs(lx0-lx1) > std::abs(ly0 - ly1)){
         long_steep = false;

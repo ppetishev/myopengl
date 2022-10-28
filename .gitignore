@@ -1,10 +1,10 @@
-data/*
+data/*.tga
 garbage
 *~
 *wrong_rle_unload.cpp
 geometry/
 start
 11_geometry/
-bin/
+bin/*
 tgaimage/*.cpp
 tgaimage/*.h
