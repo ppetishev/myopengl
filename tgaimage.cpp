@@ -225,7 +225,7 @@ bool TGAImage::write_tga_file(const char* filename, bool rle){
 	std::ofstream ofstr;
 	ofstr.open(filename, std::ios::binary);
 	if (!ofstr.is_open()){
-		std::cerr << "cannot open/create file to write" << "\n";
+		std::cerr << "cannot open/create file " << filename << " to write" << "\n";
 		ofstr.close();
 		return false;
 	}
