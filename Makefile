@@ -1,2 +1,2 @@
 all:
-	g++ -Wall -o start tgaimage.cpp main.cpp model.cpp
+	g++ -Wall -o bin/start.exe tgaimage.cpp main.cpp model.cpp
