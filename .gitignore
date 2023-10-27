@@ -8,3 +8,5 @@ start
 bin/*
 tgaimage/*.cpp
 tgaimage/*.h
+obj/49-sting-sword-lowpoly
+obj/Xbox_one_controller
